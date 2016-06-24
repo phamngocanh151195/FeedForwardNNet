@@ -184,15 +184,6 @@ class Network(object):
         return sigmoid(z)*(1-sigmoid(z))
 
 
-# In[51]:
-
-training_data, validation_data, test_data = load_data_wrapper()
-
-net = Network([784, 30, 10])
-
-net.train(training_data, 30, 10, 3.0, test_data=test_data)
-
-
 # Sources:
 # Neural networks and deep learning, Michael Nielsen (great book!)
 # http://neuralnetworksanddeeplearning.com/chap2.html
